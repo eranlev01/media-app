@@ -1,10 +1,11 @@
 # media-app
 movies and tv-series app.
 
-\Run the code
+Run the code -
 
 npm install && npm start
-\Description
+
+Description -
 
 * Trending Page - most popular movies an tv-series.
 * Movies Page - movies cards with genres filter.
