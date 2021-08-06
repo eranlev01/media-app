@@ -1,0 +1,7 @@
+.MuiBottomNavigationAction-root {
+    color: rgb(219, 215, 215) !important;
+}
+
+.MuiBottomNavigationAction-root.Mui-selected {
+    color: #3f51b5 !important;
+}

@@ -1,0 +1,23 @@
+.main-app {
+  min-height: 100vh;
+  background-color: #181a20;
+  /* background-color: #1c1f27; */
+  color: white;
+  padding: 0;
+  padding-top: 85px;
+  padding-bottom: 70px;
+}
+
+ScrollUpButton {
+  position: fixed;
+  bottom: 150px;
+}
+
+@media (max-width:800px) {
+  .main-app {
+  padding-top: 100px;
+    
+  }
+}
+
+

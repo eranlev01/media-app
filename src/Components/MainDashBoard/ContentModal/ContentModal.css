@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+/* No greater than 900px, no less than 400px */
+
+.ContentModal__landscape {
+  object-fit: contain;
+  height: 25%;
+  border-radius: 10px;
+}
+
+.ContentModal__portrait {
+  object-fit: contain;
+  display: none;
+  border-radius: 10px;
+}
+
+.tagline {
+  padding-bottom: 10px;
+  align-self: center;
+}
+
+.ContentModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.ContentModal::-webkit-scrollbar {
+  display: none;
+}
+
+.ContentModal__about {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.ContentModal__title {
+  font-size: 5vw;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ContentModal__description {
+  display: flex;
+  height: auto;
+  padding: 15px;
+  border-radius: 10px;
+  scrollbar-width: thin;
+  /* Firefox */
+  box-shadow: inset 0 0 5px #000000;
+  text-align: justify;
+  overflow-y: scroll;
+}
+
+.ContentModal__description::-webkit-scrollbar {
+  display: none;
+}
+
+.alice-carousel__wrapper {
+  margin: 15px 0 !important;
+}
+
+iframe {
+  height: 250px;
+  width: 100%;
+  margin: 20px auto;
+  border-radius: 10px;
+  scrollbar-width: thin;
+  /* Firefox */
+  box-shadow: inset 0 0 5px #000000;
+  text-align: justify;
+}
+
+@media (min-width: 750px) {
+  iframe {
+    height: 350px;
+  }
+  .ContentModal__landscape {
+    object-fit: contain;
+    height: auto;
+    border-radius: 10px;
+  }
+  .ContentModal__description {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  .ContentModal__landscape {
+    display: none;
+  }
+  .ContentModal__portrait {
+    display: flex;
+    width: 38%;
+  }
+  .ContentModal {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  .ContentModal__about {
+    width: 58%;
+    padding: 0;
+    height: 100%;
+  }
+  .ContentModal__title {
+    font-size: 3.5vw;
+  }
+  .ContentModal__description {
+    font-size: 22px;
+  }
+  .alice-carousel__wrapper {
+    margin: 15px 0 0 !important;
+  }
+  iframe {
+    height: 450px;
+  }
+}
